@@ -49,14 +49,3 @@ class TaxCloud:
       raise TaxCloudException(response.Messages[0][0].Message)
 
     return Decimal(str(response.CartItemsResponse[0][0].TaxAmount))
-
-    
-
-"""
-Lookup(xs:string apiLoginID, xs:string apiKey, xs:string customerID, xs:string cartID, ArrayOfCartItem cartItems,
-Address origin,
-Address destination,
-xs:boolean deliveredBySeller,
-ExemptionCertificate exemptCert, )
-
-"""
