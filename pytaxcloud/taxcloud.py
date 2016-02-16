@@ -43,7 +43,7 @@ class TaxCloud:
     cart_items.CartItem = [cart_item]
 
     response = self.client.service.Lookup(self.api_login_id, self.api_key, "NoCustomerID", "NoCartID",
-                                        cart_items, address, address, True, None)
+                                        cart_items, address, address, True, 'false')
 
     if( response.ResponseType == 'Error' ):
       raise TaxCloudException(response.Messages[0][0].Message)
