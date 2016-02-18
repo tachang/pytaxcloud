@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pytaxcloud',
-    version='1.0',
+    version='1.1',
     description="A library for integration with taxcloud.net. Taxcloud.net uses SOAP and this library uses SUDS for the SOAP integration.",
     long_description=open('README').read(),
     author='Jeff Tchang',
